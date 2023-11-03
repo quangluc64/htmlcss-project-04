@@ -246,6 +246,13 @@ button {
     margin-top: 77px;
     padding: 53px 0px;
 }
+.about__inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+/* about content */
 .about__label {
     font-family: Sora, "san-serif";
     color: #5e6085;
@@ -296,4 +303,78 @@ button {
     position: absolute;
     top: 0px;
     left: 5px;
+}
+
+/* about media */
+.about__media{
+    position: relative;
+}
+.about__wrap-img {
+    position: relative;
+    /* display: flex;
+    justify-content: center; */
+    width: 494px;
+    /* Khối chứa image, chiều cao ko cần để cứng
+       tự tăng giảm theo nội dung bên trong */
+    /* height: 559px; */
+    border-radius: 16px;
+}
+.about__wrap-img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: auto 0 0 0;
+    z-index: -1;
+    width: 494px;
+    height: 336px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+}
+.about__img {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    height: 550px;
+    object-fit: cover;
+    object-position: 40px 0px;
+}
+
+.about__card {
+    position: absolute;
+    top: 165px;
+    left: -92px;
+    padding: 30px 26px;
+    width: 136px;
+    height: 156px;
+    border-radius: 10px;
+    background: #5bd6e2;
+}
+.about__card-title {
+    color: #fff;
+    text-align: center;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.about__card-desc {
+    margin-top: 14px;
+    color: #c6f4f9;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.43;
+}
+.about__card-decor{
+    position: absolute;
+    top: -40px;
+    right: -30px;
+}
+
+.about__decor{
+    position: absolute;
+    top: 157px;
+    right: -50px;
+    z-index: -1;
 }
