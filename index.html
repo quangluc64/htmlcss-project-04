@@ -6,7 +6,7 @@
         <title>Lucy - Established & Trusted Pet Care Service</title>
 
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/" />
+        <!-- <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/" />
         <link
             rel="apple-touch-icon"
             sizes="60x60"
@@ -74,6 +74,36 @@
         <link rel="manifest" href="./assets/favicon/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" /> -->
+
+        <!-- Favicon Generator Transparent Background  -->
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon-transparent/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon-transparent/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon-transparent/favicon-16x16.png"
+        />
+        <link
+            rel="manifest"
+            href="./assets/favicon-transparent/site.webmanifest"
+        />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon-transparent/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
         <!-- Reset CSS -->
@@ -586,6 +616,49 @@
                 <div class="staff__wrap-btn">
                     <a href="#!" class="staff__btn btn">View All Team</a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="pricing">
+            <div class="container">
+                <!-- Pricing Top -->
+                <section class="pricing__top">
+                    <h2 class="pricing__heading section-heading">
+                        The Best Choice
+                    </h2>
+                    <p class="pricing__desc section-desc">
+                        We offer long-term and short-term boarding. Every dog
+                        has its own private, spacious room and daily individual
+                        time in our large play yard.
+                    </p>
+                </section>
+                <!-- Pricing Switch -->
+                <div class="pricing__switch-wrap">
+                   <div class="pricing__switch-inner">
+                        <!-- Switch -->
+                        <div class="pricing__switch">
+                            <input
+                                type="checkbox"
+                                name=""
+                                id="pricing-switch"
+                                class="pricing__switch-input"
+                                hidden
+                            />
+                            <label for="pricing-switch" class="pricing__label">
+                                <span class="pricing__switch-value">
+                                    Monthly
+                                </span>
+                                <span class="pricing__switch-value">
+                                    Yearly
+                                </span>
+                            </label>
+                        </div>
+                        <!-- Sales off -->
+                        <img src="./assets/image/pricing-sales-off.png" alt="" class="pricing__sales-off">
+                   </div>
+                </div>
+                
             </div>
         </section>
     </body>
