@@ -912,7 +912,7 @@ input:checked + .pricing__label .pricing__switch-value:nth-child(1) {
     color: var(--primary-color);
     transition: background-color 0.5s linear, color 0.5s linear;
 }
-.review__control:hover{
+.review__control:hover {
     background: var(--primary-color);
     color: #fff;
 }
@@ -1002,5 +1002,82 @@ input:checked + .pricing__label .pricing__switch-value:nth-child(1) {
 .review__dot--active {
     width: 24px;
     border-radius: 99px;
-    background: #FF5B2E;
+    background: #ff5b2e;
+}
+
+/* Blog */
+.blog {
+    margin-top: 130px;
+}
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__desc {
+    width: 350px;
+}
+.blog__btn {
+    margin-top: 24px;
+    min-width: 182px;
+    border-color: rgba(255, 91, 46, 0.6);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.2);
+}
+
+.blog__list{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    margin-top: 54px;
+}
+.blog-item__wrap-img {
+    width: 358px;
+    height: 362px;
+    padding: 24px 0px 0px 36px;
+    border-radius: 24px;
+    background: #90ccff;
+}
+.blog-item:nth-child(2) .blog-item__wrap-img{
+    background: #FF997E;
+}
+.blog-item:nth-child(3) .blog-item__wrap-img{
+    background: #5BD6E2;
+}
+.blog-item__time {
+    display: block;
+    color: #fff;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    /* font-weight: 400; */
+    line-height: 1.21; /* 121.429% */
+}
+.blog__wrap-img {
+    margin-left: auto;
+    margin-top: 25px;
+    width: 322px;
+    height: 296px;
+    overflow: hidden;
+}
+.blog-item__img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    scale: 1.5;
+    object-fit: cover;
+    object-position: 50px -50px;
+}
+.blog-item__title {
+    margin-top: 28px;
+    width: 338px;
+    color: #000958;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.55;
+}
+.blog-item__desc {
+    margin-top: 16px;
+    width: 358px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1.71; 
 }
